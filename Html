@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestDealHub</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f4f4; padding-bottom: 60px; }
+        .container { max-width: 480px; margin: auto; background: white; min-height: 100vh; }
+
+        /* Header & Search */
+        header { padding: 15px; font-weight: bold; font-size: 22px; background: #fff; }
+        .search-container { padding: 0 15px 15px; }
+        .search-bar { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; }
+
+        /* Hero */
+        .hero { margin: 15px; padding: 20px; background: #0f172a; color: white; border-radius: 12px; }
+        .shop-btn { background: #ffcc00; color: #000; padding: 8px 16px; border-radius: 6px; font-weight: bold; display: inline-block; margin-top: 10px; text-decoration: none; }
+
+        /* Categories */
+        .categories { display: flex; justify-content: space-around; padding: 10px; text-align: center; font-size: 12px; }
+        .cat-icon { font-size: 24px; display: block; margin-bottom: 5px; }
+
+        /* Products Grid */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 15px; }
+        .card { border: 1px solid #eee; border-radius: 10px; padding: 10px; text-align: center; }
+        .price { font-weight: bold; color: #333; }
+
+        /* Bottom Nav */
+        .nav-bar { position: fixed; bottom: 0; width: 100%; max-width: 480px; background: white; display: flex; justify-content: space-around; padding: 10px; border-top: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>DealHub</header>
+    <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search for products...">
+    </div>
+
+    <section class="hero">
+        <h2>Best Deals, Best Choices!</h2>
+        <a href="#" class="shop-btn">Shop Now</a>
+    </section>
+
+    <div class="categories">
+        <div><span class="cat-icon">📱</span>Mobiles</div>
+        <div><span class="cat-icon">💻</span>Laptops</div>
+        <div><span class="cat-icon">🎧</span>Electronics</div>
+        <div><span class="cat-icon">👗</span>Fashion</div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <p>boAt Airdopes</p>
+            <p class="price">₹1,299</p>
+        </div>
+        <div class="card">
+            <p>Noise Watch</p>
+            <p class="price">₹2,499</p>
+        </div>
+    </div>
+
+    <nav class="nav-bar">
+        <div>🏠 Home</div>
+        <div>📂 Category</div>
+        <div>🏷️ Deals</div>
+        <div>👤 Account</div>
+    </nav>
+</div>
+
+</body>
+</html>
